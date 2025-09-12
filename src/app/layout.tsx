@@ -1,16 +1,22 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Lora, Raleway } from "next/font/google";
+import { GeistSans } from 'geist/font';
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const lora = Lora({
   subsets: ["latin"],
+  display: "swap",
+  variable: "--font-lora",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const raleway = Raleway({
   subsets: ["latin"],
+  display: "swap",
+  variable: "--font-raleway",
 });
+
+// GeistSans is already optimized and doesn't need additional configuration
+const geistSans = GeistSans;
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${lora.variable} ${raleway.variable} ${geistSans.className} font-sans antialiased`}
       >
         {children}
       </body>
