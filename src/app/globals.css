@@ -1,26 +1,53 @@
+/* globals.css */
+
+/* This is the new v4 import */
 @import "tailwindcss";
 
-/* :root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* 
+  This is the new "config" file for Tailwind v4.
+  We define CSS Custom Properties (variables) and then
+  tell Tailwind to create utility classes from them using @theme.
+*/
+@theme {
+  /* 1. Define your semantic colors as CSS variables */
+  --color-background: hsl(39, 38%, 95%);      /* #F5F1E9 */
+  --color-foreground: hsl(0, 0%, 18%);        /* #2E2E2E */
+  --color-muted-foreground: hsl(0, 0%, 45%); /* #737373 */
+  --color-card: hsl(39, 38%, 97%);           /* #F9F6F2 */
+  --color-border: hsl(39, 38%, 90%);         /* #EAE5DB */
+  --color-primary: hsl(0, 0%, 18%);          /* #2E2E2E */
+  --color-primary-foreground: hsl(39, 38%, 95%); /* #F5F1E9 */
+  --color-accent: hsl(33, 33%, 70%);          /* #B99470 */
+  --color-accent-foreground: hsl(0, 0%, 18%);  /* #2E2E2E */
+  
+  /* 2. Define your font families */
+  --font-serif: var(--font-lora), serif;
+  --font-sans: var(--font-raleway), sans-serif;
+
+  /* 3. Tell Tailwind to create utility classes from these variables */
+  --colors-background: var(--color-background);
+  --colors-foreground: var(--color-foreground);
+  --colors-muted-foreground: var(--color-muted-foreground);
+  --colors-card: var(--color-card);
+  --colors-border: var(--color-border);
+  --colors-primary: var(--color-primary);
+  --colors-primary-foreground: var(--color-primary-foreground);
+  --colors-accent: var(--color-accent);
+  --colors-accent-foreground: var(--color-accent-foreground);
+
+  --font-family-serif: var(--font-serif);
+  --font-family-sans: var(--font-sans);
+
+  /* 4. (Optional but recommended) Define your font sizes */
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  /* ...add the rest of your custom font sizes here if needed */
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* 5. Set up your base body styles using your new variables */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-} */
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+}
