@@ -6,10 +6,10 @@ export default function Hero() {
   return (
     // This section is now just a container for the content.
     // It still needs to be full-height to push the next section down.
-    <section className="relative h-screen w-full flex items-center justify-center text-center">
+    <section className="text-primary-foreground relative h-screen w-full flex items-center justify-center text-center">
       {/* Content */}
       <div className="relative z-10 px-4">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif text-cream max-w-4xl mx-auto leading-tight">
+        <h1 className="text-primary-foreground text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif text-cream max-w-4xl mx-auto leading-tight">
           After all, good design isn't just about how a space looks — it's about how it makes you feel.
         </h1>
         <Link
