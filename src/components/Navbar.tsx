@@ -34,7 +34,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="absolute top-0 left-0 w-full z-20 py-6 px-4 sm:px-8 md:px-12 lg:px-16 text-charcoal">
+      <nav className="text-primary-foreground absolute top-0 left-0 w-full z-20 py-6 px-4 sm:px-8 md:px-12 lg:px-16 text-charcoal">
         <div className="container mx-auto flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="text-xl font-semibold tracking-widest font-serif">
