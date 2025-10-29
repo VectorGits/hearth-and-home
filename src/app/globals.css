@@ -45,6 +45,23 @@
   /* ...add the rest of your custom font sizes here if needed */
 }
 
+@layer utilities {
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.7s ease-in-out;
+  }
+}
+
 /* 5. Set up your base body styles using your new variables */
 body {
   background-color: var(--color-background);
