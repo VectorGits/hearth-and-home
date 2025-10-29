@@ -78,7 +78,7 @@ export default function FounderBio({
     // Build spans per character (preserve spaces)
     const html = original
       .split("")
-      .map((ch, idx) => `<span class="char inline-block will-change-transform">${ch === " " ? "&nbsp;" : ch}</span>`) // tailwind classes applied to spans
+      .map((ch) => `<span class="char inline-block will-change-transform">${ch === " " ? "&nbsp;" : ch}</span>`) // tailwind classes applied to spans
       .join("");
 
     el.innerHTML = html;

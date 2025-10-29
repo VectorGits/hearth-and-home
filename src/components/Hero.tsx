@@ -10,7 +10,7 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 px-4">
         <h1 className="text-primary-foreground text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif text-cream max-w-4xl mx-auto leading-tight">
-          After all, good design isn't just about how a space looks — it's about how it makes you feel.
+          After all, good design isn&apos;t just about how a space looks — it&apos;s about how it makes you feel.
         </h1>
         <Link
           href="/services"

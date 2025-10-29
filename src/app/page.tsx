@@ -33,7 +33,7 @@ export default function Home() {
               Hearth & Home is a boutique interior design studio dedicated to creating spaces that are not only beautiful but deeply personal. We believe a home should be a sanctuary—a reflection of your story and a foundation for your life.
             </p>
             <p className="font-sans text-muted-foreground text-sm md:text-lg max-w-3xl">
-              We understand that the journey to creating this sanctuary can feel overwhelming. The countless decisions and complexities of the design process can overshadow the joy of building a home. That's why our approach is built on collaboration and intention. We guide you through every choice, from the grandest architectural details to the most intimate finishing touches, ensuring the experience is as seamless and enjoyable as the final result.
+              We understand that the journey to creating this sanctuary can feel overwhelming. The countless decisions and complexities of the design process can overshadow the joy of building a home. That&apos;s why our approach is built on collaboration and intention. We guide you through every choice, from the grandest architectural details to the most intimate finishing touches, ensuring the experience is as seamless and enjoyable as the final result.
             </p>
           </div>
           {/* Bottom vertical line */}

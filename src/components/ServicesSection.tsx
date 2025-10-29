@@ -1,6 +1,7 @@
 "use client";
 
 import React, { CSSProperties, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
+import Image from "next/image";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -207,7 +208,7 @@ const ServicesSection: React.FC = () => {
                   className="group flex flex-col items-center justify-center p-2 md:p-3 text-center transition-transform duration-200 hover:scale-105"
                 >
                   <div className="mb-3 flex h-24 w-24 md:h-28 md:w-28 items-center justify-center">
-                    <img src={service.iconSrc} alt={service.title} className="h-24 w-24 md:h-28 md:w-28 object-contain" />
+                    <Image src={service.iconSrc} alt={service.title} width={112} height={112} className="h-24 w-24 md:h-28 md:w-28 object-contain" />
                   </div>
                   <p className="text-[11px] md:text-[12px] lg:text-[13px] font-medium tracking-[0.14em] leading-tight text-[#8a8f86] text-center">
                     {service.title}
@@ -225,7 +226,7 @@ const ServicesSection: React.FC = () => {
                   className="group flex flex-col items-center justify-center p-2 md:p-3 text-center transition-transform duration-200 hover:scale-105"
                 >
                   <div className="mb-3 flex h-24 w-24 md:h-28 md:w-28 items-center justify-center">
-                    <img src={service.iconSrc} alt={service.title} className="h-24 w-24 md:h-28 md:w-28 object-contain" />
+                    <Image src={service.iconSrc} alt={service.title} width={112} height={112} className="h-24 w-24 md:h-28 md:w-28 object-contain" />
                   </div>
                   <p className="text-[11px] md:text-[12px] lg:text-[13px] font-medium tracking-[0.14em] leading-tight text-[#8a8f86] text-center">
                     {service.title}
@@ -252,7 +253,7 @@ const ServicesSection: React.FC = () => {
                   className="flex flex-col items-center justify-center p-2 text-center"
                 >
                   <div className="mb-2 flex h-20 w-20 items-center justify-center">
-                    <img src={service.iconSrc} alt={service.title} className="h-20 w-20 object-contain" />
+                    <Image src={service.iconSrc} alt={service.title} width={80} height={80} className="h-20 w-20 object-contain" />
                   </div>
                   <p className="text-[11px] font-medium tracking-[0.14em] leading-tight text-[#8a8f86] text-center">
                     {service.title}
@@ -274,7 +275,7 @@ const ServicesSection: React.FC = () => {
                   className="flex flex-col items-center justify-center p-2 text-center"
                 >
                   <div className="mb-2 flex h-20 w-20 items-center justify-center">
-                    <img src={service.iconSrc} alt={service.title} className="h-20 w-20 object-contain" />
+                    <Image src={service.iconSrc} alt={service.title} width={80} height={80} className="h-20 w-20 object-contain" />
                   </div>
                   <p className="text-[11px] font-medium tracking-[0.14em] leading-tight text-[#8a8f86] text-center">
                     {service.title}
